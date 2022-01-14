@@ -2,6 +2,7 @@ import React from "react";
 import "./App.css";
 
 import { AppContainer } from "./styles";
+import { AddNewGroup } from "./components/AddNewGroup";
 import { CardGroup } from "./components/CardGroup";
 import { Card } from "./components/Card";
 
@@ -17,6 +18,7 @@ function App() {
       <CardGroup text="Done">
         <Card text="Bootstrapped React project with TS" />
       </CardGroup>
+      <AddNewGroup toggleButtonText="+ Add another list" onAdd={console.log} />
     </AppContainer>
   );
 }
