@@ -9,8 +9,8 @@ interface AddNewGroupProps {
 }
 
 export const AddNewGroup = (props: AddNewGroupProps) => {
-  const [showForm, setShowForm] = useState(false);
   const { onAdd, toggleButtonText, darkText } = props;
+  const [showForm, setShowForm] = useState(false);
 
   if (showForm) {
     return (

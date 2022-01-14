@@ -4,18 +4,24 @@ import {
   NewGroupButton,
   NewGroupInput,
 } from "../styles";
+import { useFocus } from "../utils/useFocus";
 
 interface NewGroupFormProps {
   onAdd(text: string): void;
 }
 
-export const NewGroupForm = (props: NewGroupFormProps) => {
+export const NewGroupForm = ({ onAdd }: NewGroupFormProps) => {
   const [text, setText] = useState("");
-  const { onAdd } = props;
+  const inputRef = useFocus();
 
   return (
     <NewGroupFormContainer>
-      <NewGroupInput value={text} onChange={(e) => setText(e.target.value)} />
+      <NewGroupInput
+        // autoFocus
+        ref={inputRef}
+        value={text}
+        onChange={(e) => setText(e.target.value)}
+      />
       <NewGroupButton onClick={() => onAdd(text)}>Create</NewGroupButton>
     </NewGroupFormContainer>
   );
