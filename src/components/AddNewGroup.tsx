@@ -12,20 +12,21 @@ export const AddNewGroup = (props: AddNewGroupProps) => {
   const { onAdd, toggleButtonText, darkText } = props;
   const [showForm, setShowForm] = useState(false);
 
-  if (showForm) {
-    return (
-      <NewGroupForm
-        onAdd={(text) => {
-          onAdd(text);
-          setShowForm(false);
-        }}
-      />
-    );
-  }
-
   return (
-    <AddItemButton darkText={darkText} onClick={() => setShowForm(true)}>
-      {toggleButtonText}
-    </AddItemButton>
+    <>
+      {showForm && (
+        <NewGroupForm
+          onAdd={(text) => {
+            onAdd(text);
+            setShowForm(false);
+          }}
+        />
+      )}
+      {!showForm && (
+        <AddItemButton darkText={darkText} onClick={() => setShowForm(true)}>
+          {toggleButtonText}
+        </AddItemButton>
+      )}
+    </>
   );
 };
