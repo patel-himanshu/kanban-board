@@ -4,11 +4,27 @@ interface AddItemButtonProps {
   darkText?: boolean;
 }
 
+export const Header = styled.nav`
+  display: flex;
+  justify-content: center;
+  background-color: #2d4154;
+  background-color: #145b92;
+  color: #edf7b5;
+  color: #ffec89;
+  padding: 0.75rem 0.5rem;
+  font-family: "Geogia", Arial, sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+`;
+
 export const AppContainer = styled.div`
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  background-color: #459bf7;
+  background-color: #e4cb54;
+  background-color: #f7dd72;
+  background-color: #252525;
+  background-color: #2e3948;
   height: 100%;
   width: 100%;
   padding: 1rem;

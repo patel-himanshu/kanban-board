@@ -6,6 +6,11 @@ input:focus {
   align-items: flex-end;
 } */
 
+.bi-kanban-fill {
+  /* color: #42273b; */
+  margin-right: 0.5rem;
+}
+
 .bi-pencil-fill {
   padding: 0 2px;
   color: green;

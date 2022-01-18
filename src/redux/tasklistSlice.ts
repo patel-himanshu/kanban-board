@@ -90,8 +90,6 @@ export const tasklistSlice = createSlice({
         1
       );
     },
-
-    // rename_task: (state, action: PayloadAction<Task>) =>
   },
 });
 
