@@ -16,7 +16,7 @@ export const Card = ({ tasklistIndex, taskId, text }: CardProps) => {
     <CardContainer>
       {text}
       <span className="task-icons">
-        <i className="bi bi-pencil-fill"></i>
+        {/* <i className="bi bi-pencil-fill"></i> */}
         <i
           className="bi bi-trash-fill"
           onClick={() => dispatch(delete_task({ tasklistIndex, taskId }))}

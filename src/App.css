@@ -14,3 +14,8 @@ input:focus {
 .bi-trash-fill {
   color: red;
 }
+
+.card-delete {
+  float: right;
+  cursor: pointer;
+}
