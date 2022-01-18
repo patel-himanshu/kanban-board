@@ -1,4 +1,5 @@
 import React from "react";
+import "bootstrap-icons/font/bootstrap-icons.css";
 import "./App.css";
 
 import { useAppDispatch, useAppSelector } from "./redux/hooks";

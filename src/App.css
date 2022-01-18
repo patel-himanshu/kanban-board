@@ -1,3 +1,16 @@
 input:focus {
   outline: 1px solid green;
 }
+
+/* .task-icons {
+  align-items: flex-end;
+} */
+
+.bi-pencil-fill {
+  padding: 0 2px;
+  color: green;
+}
+
+.bi-trash-fill {
+  color: red;
+}

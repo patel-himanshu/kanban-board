@@ -38,8 +38,11 @@ export const CardContainer = styled.div`
   cursor: pointer;
   border-radius: 0.25rem;
   max-width: 300px;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem;
   margin-bottom: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 `;
 
 export const AddItemButton = styled.button<AddItemButtonProps>`
@@ -51,10 +54,13 @@ export const AddItemButton = styled.button<AddItemButtonProps>`
   font-style: italic;
   font-weight: 600;
   text-align: left;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   width: 100%;
   max-width: 300px;
   padding: 0.5rem 1rem;
-  transition: backgroudn 75s ease-in;
+  transition: background-color 75s ease-in;
   &:hover {
     background-color: #b0b0b0;
     border: 1px outset #fff;
@@ -77,7 +83,7 @@ export const NewGroupButton = styled.button`
   color: #fff;
   padding: 0.5rem 1rem;
   text-align: center;
-  transition: backgroudn 75s ease-in;
+  transition: background-color 75s ease-in;
   &:hover {
     background-color: #38ba14;
   }
