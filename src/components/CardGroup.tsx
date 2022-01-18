@@ -23,7 +23,12 @@ export const CardGroup = ({
     <CardGroupContainer>
       <CardGroupTitle>{title}</CardGroupTitle>
       {tasklists[index].tasks.map((task) => (
-        <Card key={task.id} text={task.text} />
+        <Card
+          key={task.id}
+          tasklistIndex={index}
+          taskId={task.id}
+          text={task.text}
+        />
       ))}
       <AddNewGroup
         toggleButtonText="+ Add another task"

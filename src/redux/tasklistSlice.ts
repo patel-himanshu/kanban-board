@@ -71,11 +71,26 @@ export const tasklistSlice = createSlice({
     },
 
     // rename_task: (state, action: PayloadAction<Task>) =>
-    // delete_task: (state, action: PayloadAction<  >) =>
+
+    // action.payload = {"tasklistId" (ID of the task list), "taskId" (id of task)}
+    delete_task: (
+      state,
+      action: PayloadAction<{ tasklistIndex: number; taskId: string }>
+    ) => {
+      const targetTaskIndex = findItemIndexById(
+        state.lists[action.payload.tasklistIndex].tasks,
+        action.payload.taskId
+      );
+
+      state.lists[action.payload.tasklistIndex].tasks.splice(
+        targetTaskIndex,
+        1
+      );
+    },
   },
 });
 
-export const { add_list, add_task } = tasklistSlice.actions;
+export const { add_list, add_task, delete_task } = tasklistSlice.actions;
 export const selectTasklist = (state: RootState) => state.tasklist.lists;
 
 export default tasklistSlice.reducer;
