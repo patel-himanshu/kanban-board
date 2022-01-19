@@ -11,6 +11,15 @@ input:focus {
   margin-right: 0.5rem;
 }
 
+.bi-justify {
+  margin-right: 0.5rem;
+}
+
+.card-delete {
+  float: right;
+  cursor: pointer;
+}
+
 .bi-pencil-fill {
   padding: 0 2px;
   color: green;
@@ -20,7 +29,13 @@ input:focus {
   color: red;
 }
 
-.card-delete {
-  float: right;
+span.create-new-item {
+  display: flex;
+  align-items: stretch;
+}
+
+.bi-x-lg {
   cursor: pointer;
+  font-size: 1.3rem;
+  margin-left: 1rem;
 }
