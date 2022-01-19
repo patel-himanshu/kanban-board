@@ -5,11 +5,16 @@ interface AddItemButtonProps {
 }
 
 export const Header = styled.nav`
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
   display: flex;
   justify-content: center;
-  background-color: #2d4154;
+  // background-color: #2d4154;
   background-color: #145b92;
-  color: #edf7b5;
+  // color: #edf7b5;
   color: #ffec89;
   padding: 0.75rem 0.5rem;
   font-family: "Geogia", Arial, sans-serif;
@@ -21,13 +26,15 @@ export const AppContainer = styled.div`
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  background-color: #e4cb54;
-  background-color: #f7dd72;
-  background-color: #252525;
+  // background-color: #252525;
+  // background-color: #e4cb54;
   background-color: #2e3948;
-  height: 100%;
+  min-height: 100vh;
   width: 100%;
   padding: 1rem;
+  padding-bottom: 5rem;
+  overflow-x: scroll;
+  overflow-y: scroll;
 `;
 
 export const CardGroupContainer = styled.div`
@@ -35,7 +42,9 @@ export const CardGroupContainer = styled.div`
   box-shadow: #888 1px 0 5px;
   border-radius: 0.5rem;
   min-height: 40px;
-  width: 300px;
+  // width: 20rem;
+  min-width: 20rem;
+  // min-width: 200px;
   padding: 0.5rem 0.5rem;
   margin-right: 1rem;
   flex-grow: 0;
@@ -43,8 +52,12 @@ export const CardGroupContainer = styled.div`
 
 export const CardGroupTitle = styled.div`
   padding: 0.5rem;
+  min-width: 200px;
   font-style: italic;
   font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 `;
 
 export const CardContainer = styled.div`
@@ -74,6 +87,7 @@ export const AddItemButton = styled.button<AddItemButtonProps>`
   flex-direction: row;
   justify-content: center;
   width: 100%;
+  min-width: 180px;
   max-width: 300px;
   padding: 0.5rem 1rem;
   transition: background-color 75s ease-in;

@@ -22,7 +22,6 @@ export const CardGroup = ({
   return (
     <CardGroupContainer>
       <CardGroupTitle>
-        {/* <i className="bi bi-filter-left"></i> */}
         <i className="bi bi-justify"></i>
         {title}
         <i

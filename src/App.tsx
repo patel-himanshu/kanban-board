@@ -31,6 +31,17 @@ function App() {
           toggleButtonText="+ Add another list"
           onAdd={(text) => dispatch(add_list(text))}
         />
+        <div className="footer">
+          Made by Himanshu Patel (
+          <a
+            href="https://github.com/patel-himanshu/kanban-board/"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            Source
+          </a>
+          )
+        </div>
       </AppContainer>
     </>
   );

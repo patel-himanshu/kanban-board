@@ -20,9 +20,13 @@ export const NewGroupForm = ({ onAdd }: NewGroupFormProps) => {
         // autoFocus
         ref={inputRef}
         value={text}
+        placeholder="Enter task description"
         onChange={(e) => setText(e.target.value)}
       />
-      <NewGroupButton onClick={() => onAdd(text)}>Create</NewGroupButton>
+      <span className="create-new-item">
+        <NewGroupButton onClick={() => onAdd(text)}>Create</NewGroupButton>
+        {/* <i className="bi bi-x-lg"></i> */}
+      </span>
     </NewGroupFormContainer>
   );
 };

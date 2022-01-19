@@ -15,8 +15,8 @@ input:focus {
   margin-right: 0.5rem;
 }
 
-.card-delete {
-  float: right;
+.bi-justify,
+.bi-x-circle-fill {
   cursor: pointer;
 }
 
