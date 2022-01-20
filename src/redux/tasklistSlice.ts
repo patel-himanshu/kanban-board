@@ -23,17 +23,23 @@ const initialState: AppState = {
     {
       id: uuid(),
       title: "To Do",
-      tasks: [{ id: uuid(), text: "Create project with Web Components" }],
+      tasks: [
+        { id: uuid(), text: "Select background colour" },
+        { id: uuid(), text: "Select background image from Unsplash" },
+      ],
     },
     {
       id: uuid(),
       title: "Doing",
-      tasks: [{ id: uuid(), text: "Learning TypeScript" }],
+      tasks: [
+        { id: uuid(), text: "Fix CSS issues" },
+        { id: uuid(), text: "Add drag-and-drop functionality" },
+      ],
     },
     {
       id: uuid(),
       title: "Done",
-      tasks: [{ id: uuid(), text: "Bootstrapped React project with TS" }],
+      tasks: [{ id: uuid(), text: "Use Redux Toolkit for state management" }],
     },
   ],
 };

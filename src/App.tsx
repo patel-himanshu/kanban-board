@@ -38,7 +38,7 @@ function App() {
             target="_blank"
             rel="noreferrer noopener"
           >
-            Source
+            Source Code
           </a>
           )
         </div>
