@@ -117,6 +117,9 @@ export const NewGroupButton = styled.button`
   &:hover {
     background-color: #38ba14;
   }
+  &:disabled {
+    opacity: 0.5;
+  }
 `;
 
 export const NewGroupInput = styled.input`

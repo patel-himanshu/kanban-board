@@ -24,7 +24,9 @@ export const NewGroupForm = ({ onAdd }: NewGroupFormProps) => {
         onChange={(e) => setText(e.target.value)}
       />
       <span className="create-new-item">
-        <NewGroupButton onClick={() => onAdd(text)}>Create</NewGroupButton>
+        <NewGroupButton disabled={!text} onClick={() => onAdd(text)}>
+          Create
+        </NewGroupButton>
         {/* <i className="bi bi-x-lg"></i> */}
       </span>
     </NewGroupFormContainer>
